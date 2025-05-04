@@ -80,7 +80,7 @@ class SimulacionApp(tk.Tk):
         self.n_entry.grid(row=1, column=1, padx=5, pady=5, sticky="ew")
 
         # Número de intervalos (bins)
-        ttk.Label(param_frame, text="Intervalos (bins):", font=('Segoe UI', 10)).grid(row=1, column=2, padx=5, pady=5, sticky="w")
+        ttk.Label(param_frame, text="Intervalos:", font=('Segoe UI', 10)).grid(row=1, column=2, padx=5, pady=5, sticky="w")
         self.bins_var = tk.IntVar(value=10)
         bins_menu = ttk.OptionMenu(param_frame, self.bins_var, 10, 10, 15, 20, 25, style='TMenubutton')
         bins_menu.grid(row=1, column=3, padx=5, pady=5, sticky="ew")
